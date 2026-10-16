@@ -53,10 +53,7 @@ button:focus-visible {
     margin: auto;
 }
 
-
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 header {
     position: sticky;
@@ -111,10 +108,7 @@ nav .links a:hover {
     border-radius: 7px;
 }
 
-
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero {
     display: grid;
@@ -204,86 +198,49 @@ nav .links a:hover {
     font-size: 12px;
 }
 
-
-/* =========================
-   PROFILE PHOTO - FIXED
-========================= */
+/* PROFILE PHOTO - CLEAN FIX */
 
 .portrait {
     position: relative;
-
-    /* IMPORTANT:
-       Fill the available right column.
-       Do not restrict to 420px.
-    */
     width: 100%;
     max-width: 520px;
-
     justify-self: end;
 }
 
-/* The real photo is 800 x 1000 = 4:5 */
 .portrait img {
     display: block;
-
     width: 100%;
     height: auto;
     aspect-ratio: 4 / 5;
-
     object-fit: cover;
     object-position: center center;
-
     border-radius: 150px 150px 12px 12px;
-
     filter: saturate(0.75);
 }
 
-/* Small decorative outline only */
+/* REMOVE EXTRA DECORATIVE OUTLINE */
 .portrait::before {
-    content: "";
-    position: absolute;
-
-    top: 14px;
-    left: 14px;
-    right: -14px;
-    bottom: -14px;
-
-    border: 1px solid #b2bea4;
-    border-radius: 150px 150px 12px 12px;
-
-    z-index: -1;
-    pointer-events: none;
+    display: none;
 }
 
 .portrait-label {
     position: absolute;
-
     left: -30px;
     bottom: 28px;
-
     z-index: 2;
-
     padding: 20px 28px;
-
     color: white;
     background: var(--ink);
-
     border-radius: 7px;
-
     box-shadow: 0 10px 35px rgba(23, 45, 39, 0.15);
 }
 
 .portrait-label small {
     display: block;
-
     margin-bottom: 3px;
-
     color: #ced9c7;
-
     font-size: 10px;
-
     letter-spacing: 2px;
-
     text-transform: uppercase;
 }
 
@@ -293,10 +250,7 @@ nav .links a:hover {
     font-weight: 500;
 }
 
-
-/* =========================
-   INFO STRIP
-========================= */
+/* INFO STRIP */
 
 .strip {
     padding: 23px 0;
@@ -309,9 +263,7 @@ nav .links a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-
     color: var(--muted);
-
     font-size: 12px;
 }
 
@@ -320,10 +272,7 @@ nav .links a:hover {
     font-weight: 500;
 }
 
-
-/* =========================
-   SECTIONS
-========================= */
+/* SECTIONS */
 
 .section {
     padding: 88px 0;
@@ -333,57 +282,41 @@ nav .links a:hover {
     display: flex;
     align-items: end;
     justify-content: space-between;
-
     gap: 35px;
-
     margin-bottom: 40px;
 }
 
 .kicker {
     color: #6c8054;
-
     font-size: 11px;
     font-weight: bold;
-
     letter-spacing: 2px;
-
     text-transform: uppercase;
 }
 
 .section h2 {
     margin: 12px 0;
-
     font-size: clamp(32px, 4vw, 48px);
-
     line-height: 1.15;
-
     letter-spacing: -1.7px;
 }
 
 .section-heading > p {
     max-width: 360px;
-
     color: var(--muted);
-
     font-size: 14px;
 }
 
-
-/* =========================
-   ABOUT
-========================= */
+/* ABOUT */
 
 .about-grid {
     display: grid;
-
     grid-template-columns: 1.1fr 1fr;
-
     gap: 90px;
 }
 
 .about-copy {
     color: var(--muted);
-
     font-size: 18px;
 }
 
@@ -393,7 +326,6 @@ nav .links a:hover {
 
 .about-copy strong {
     color: var(--ink);
-
     font-weight: 500;
 }
 
@@ -403,15 +335,10 @@ nav .links a:hover {
 
 .fact {
     display: flex;
-
     justify-content: space-between;
-
     gap: 20px;
-
     padding: 18px 0;
-
     border-bottom: 1px solid var(--line);
-
     font-size: 13px;
 }
 
@@ -421,18 +348,13 @@ nav .links a:hover {
 
 .fact b {
     text-align: right;
-
     font-weight: 500;
 }
 
-
-/* =========================
-   SKILLS
-========================= */
+/* SKILLS */
 
 .dark {
     color: var(--paper);
-
     background: var(--ink);
 }
 
@@ -446,129 +368,93 @@ nav .links a:hover {
 
 .capabilities {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 34px;
 }
 
 .capability {
     padding-top: 24px;
-
     border-top: 1px solid #4c6054;
 }
 
 .num {
     color: var(--lime);
-
     font: italic 28px Georgia, serif;
 }
 
 .capability h3 {
     margin: 20px 0 13px;
-
     font-size: 22px;
-
     letter-spacing: -0.5px;
 }
 
 .capability p {
     min-height: 90px;
-
     color: #b6c5bb;
-
     font-size: 14px;
 }
 
 .tags {
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 7px;
 }
 
 .tags span {
     padding: 5px 11px;
-
     color: #d5ded4;
-
     border: 1px solid #4c6054;
-
     border-radius: 20px;
-
     font-size: 11px;
 }
 
-
-/* =========================
-   EXPERIENCE
-========================= */
+/* EXPERIENCE */
 
 .experience {
     display: grid;
-
     grid-template-columns: 0.65fr 1.35fr;
-
     gap: 70px;
 }
 
 .experience .year {
     margin-top: 9px;
-
     color: var(--muted);
-
     font-size: 13px;
 }
 
 .experience h3 {
     margin: 0;
-
     font-size: 27px;
-
     letter-spacing: -0.8px;
 }
 
 .experience .role {
     margin: 4px 0 20px;
-
     color: #6c8054;
-
     font-size: 14px;
 }
 
 .experience ul {
     padding: 0;
-
     color: var(--muted);
-
     list-style: none;
-
     font-size: 15px;
 }
 
 .experience li {
     position: relative;
-
     padding: 12px 0 12px 24px;
-
     border-bottom: 1px solid var(--line);
 }
 
 .experience li::before {
     content: "↗";
-
     position: absolute;
-
     left: 0;
-
     color: #6c8054;
 }
 
-
-/* =========================
-   EDUCATION
-========================= */
+/* EDUCATION */
 
 .education {
     background: #edf0e6;
@@ -576,49 +462,37 @@ nav .links a:hover {
 
 .edu-grid {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 0 50px;
 }
 
 .edu {
     padding: 26px 0;
-
     border-top: 1px solid #cdd6c4;
 }
 
 .edu small {
     color: #6c8054;
-
     font-size: 11px;
-
     letter-spacing: 1px;
 }
 
 .edu h3 {
     margin: 8px 0 5px;
-
     font-size: 20px;
-
     letter-spacing: -0.5px;
 }
 
 .edu p {
     margin: 0;
-
     color: var(--muted);
-
     font-size: 13px;
 }
 
 .edu.wide {
     grid-column: 1 / -1;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 }
 
@@ -628,20 +502,13 @@ nav .links a:hover {
 
 .pill {
     padding: 6px 14px;
-
     border: 1px solid #b9c7ab;
-
     border-radius: 20px;
-
     font-size: 11px;
-
     white-space: nowrap;
 }
 
-
-/* =========================
-   CONTACT
-========================= */
+/* CONTACT */
 
 .contact {
     padding: 85px 0;
@@ -649,134 +516,89 @@ nav .links a:hover {
 
 .contact-box {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 60px;
-
     padding: 55px;
-
     background: var(--lime);
-
     border-radius: 12px;
 }
 
 .contact-box h2 {
     margin: 14px 0 20px;
-
     font-size: clamp(36px, 4.5vw, 57px);
-
     line-height: 1.1;
-
     letter-spacing: -2px;
 }
 
 .contact-box p {
     max-width: 340px;
-
     font-size: 14px;
 }
 
 .contact-links {
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
 }
 
 .contact-link {
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 10px;
-
     padding: 15px 0;
-
     border-bottom: 1px solid #a6bf79;
-
     font-size: 15px;
-
     overflow-wrap: anywhere;
 }
 
 .contact-link small {
     display: block;
-
     color: #526835;
-
     font-size: 10px;
-
     letter-spacing: 1.3px;
-
     text-transform: uppercase;
 }
 
 .copy {
     align-self: start;
-
     margin-top: 17px;
-
     padding: 3px 0;
-
     background: none;
-
     border: 0;
-
     border-bottom: 1px solid var(--ink);
-
     cursor: pointer;
-
     font-size: 12px;
 }
 
 #copy-status {
     min-height: 20px;
-
     margin-top: 7px;
-
     font-size: 12px;
 }
 
-
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
     padding: 25px 0 35px;
-
     border-top: 1px solid var(--line);
 }
 
 footer .wrap {
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
-
     gap: 20px;
-
     color: var(--muted);
-
     font-size: 11px;
 }
 
 .skip {
     position: fixed;
-
     top: -60px;
-
     left: 10px;
-
     z-index: 50;
-
     padding: 10px;
-
     background: white;
 }
 
@@ -784,37 +606,25 @@ footer .wrap {
     top: 10px;
 }
 
-
-/* =========================
-   LARGE SCREEN
-========================= */
+/* LARGE SCREEN */
 
 @media (min-width: 1000px) {
-
     .hero {
         min-height: 700px;
     }
-
 }
 
-
-/* =========================
-   TABLET
-========================= */
+/* TABLET */
 
 @media (max-width: 800px) {
-
     .hero {
         grid-template-columns: 1fr 1fr;
-
         gap: 35px;
-
         padding: 45px 0 55px;
     }
 
     .hero h1 {
         font-size: 58px;
-
         letter-spacing: -3px;
     }
 
@@ -838,23 +648,17 @@ footer .wrap {
 
     .contact-box {
         gap: 30px;
-
         padding: 35px;
     }
 
     nav .links {
         gap: 18px;
     }
-
 }
 
-
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media (max-width: 600px) {
-
     .wrap {
         width: 88%;
     }
@@ -869,35 +673,24 @@ footer .wrap {
 
     nav .links {
         display: none;
-
         position: absolute;
-
         top: 72px;
-
         left: 0;
-
         right: 0;
-
         padding: 25px 6%;
-
         background: var(--paper);
-
         border-bottom: 1px solid var(--line);
     }
 
     nav .links.open {
         display: flex;
-
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 23px;
     }
 
     .hero {
         grid-template-columns: 1fr;
-
         gap: 46px;
     }
 
@@ -912,23 +705,13 @@ footer .wrap {
     .portrait {
         width: 88%;
         max-width: 420px;
-
         margin: 0 auto;
-
         justify-self: center;
-    }
-
-    .portrait::before {
-        top: 10px;
-        left: 10px;
-        right: -10px;
-        bottom: -10px;
     }
 
     .portrait-label {
         left: -18px;
         bottom: 20px;
-
         padding: 15px 20px;
     }
 
@@ -938,9 +721,7 @@ footer .wrap {
 
     .strip .wrap {
         display: grid;
-
         grid-template-columns: 1fr 1fr;
-
         font-size: 11px;
     }
 
@@ -950,7 +731,6 @@ footer .wrap {
 
     .section-heading {
         display: block;
-
         margin-bottom: 30px;
     }
 
@@ -964,7 +744,6 @@ footer .wrap {
     .edu-grid,
     .contact-box {
         grid-template-columns: 1fr;
-
         gap: 25px;
     }
 
@@ -990,7 +769,6 @@ footer .wrap {
 
     .edu.wide .pill {
         display: inline-block;
-
         margin-top: 15px;
     }
 
@@ -1017,16 +795,11 @@ footer .wrap {
     .location {
         margin-top: 25px;
     }
-
 }
 
-
-/* =========================
-   ACCESSIBILITY
-========================= */
+/* ACCESSIBILITY */
 
 @media (prefers-reduced-motion: reduce) {
-
     html {
         scroll-behavior: auto;
     }
@@ -1034,5 +807,4 @@ footer .wrap {
     * {
         transition: none !important;
     }
-
 }
